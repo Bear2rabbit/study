@@ -8,7 +8,7 @@
 
 > 本质上，*webpack* 是一个现代 JavaScript 应用程序的*静态模块打包器(module bundler)*。当 webpack 处理应用程序时，它会递归地构建一个*依赖关系图(dependency graph)*，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 *bundle*。
 
-![1556458624028](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588179741864&di=644f0c6c08169da8003ffdb943557dec&imgtype=0&src=http%3A%2F%2Fimg.wang1314.net%2Fuploadfile%2F2016%2F2016-07-04%2F1467617080934u_249026_uw_600_wh_441_hl_18233_l.jpg)
+![1556458624028](./assets/webpack.png)
 
 - 代码转译
 - 模块合并
