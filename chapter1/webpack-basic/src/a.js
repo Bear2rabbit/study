@@ -5,5 +5,5 @@
 
 //es6规范
 export default {
-    name: 'hahah'
+    name: 'hahgggg88888888gah'
 }

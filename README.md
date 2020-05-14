@@ -308,19 +308,19 @@ loader的释义:
 
 ### 处理less 和 sass
 
-`npm i less less-loader sass-loader node-sass -D`
+`cnpm i less less-loader sass-loader node-sass -D`
 
 ```js
 { test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader'] },
 ```
 
 ```js
-{ test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] }
+{ test: /\.s(a|c)ss$/, use: ['style-loader', 'css-loader', 'sass-loader'] }
 ```
 
 ### 处理图片和字体
 
-1. `npm i file-loader url-loader -D`
+1. `cnpm i file-loader url-loader -D`
 
 url-loader封装了file-loader, 所以使用url-loader时需要安装file-loader
 
@@ -343,11 +343,11 @@ url-loader封装了file-loader, 所以使用url-loader时需要安装file-loader
 
 ### babel
 
-1. `npm i babel-loader @babel/core @babel/preset-env webpack -D`
+1. `cnpm i babel-loader @babel/core @babel/preset-env webpack -D`
 
 2. 如果需要支持更高级的ES6语法, 可以继续安装插件:
 
-   `npm i @babel/plugin-proposal-class-properties -D`
+   `cnpm i @babel/plugin-proposal-class-properties -D`
 
    也可以根据需要在babel官网找插件进行安装
 
@@ -380,11 +380,11 @@ url-loader封装了file-loader, 所以使用url-loader时需要安装file-loader
 
 需要安装插件:
 
-​	`npm i @babel/plugin-transform-runtime -D`
+​	`cnpm i @babel/plugin-transform-runtime -D`
 
 同时还需安装运行时依赖:
 
-​	`npm i @babel/runtime -D`
+​	`cnpm i @babel/runtime -D`
 
 在`.babelrc`中添加插件:
 
@@ -404,7 +404,7 @@ url-loader封装了file-loader, 所以使用url-loader时需要安装file-loader
 
 需要使用另一个模块:
 
-​	`npm i @babel/polyfill -S`
+​	`cnpm i @babel/polyfill -S`
 
 该模块需要在使用新方法的地方直接引入:
 
@@ -463,7 +463,7 @@ url-loader封装了file-loader, 所以使用url-loader时需要安装file-loader
 
 1. 安装插件
 
-   `npm i clean-webpack-plugin -D`
+   `cnpm i clean-webpack-plugin -D`
 
 2. 引入插件
 
@@ -487,7 +487,7 @@ url-loader封装了file-loader, 所以使用url-loader时需要安装file-loader
 
 1. 安装插件
 
-   `npm i copy-webpack-plugin -D`
+   `cnpm i copy-webpack-plugin -D`
 
 2. 引入插件
 
@@ -551,7 +551,7 @@ url-loader封装了file-loader, 所以使用url-loader时需要安装file-loader
 
 ## HTML中img标签的图片资源处理
 
-1. 安装`npm install -S html-withimg-loader`
+1. 安装`cnpm install -S html-withimg-loader`
 
 2. 在`webpack.config.js`文件中添加loader
 
